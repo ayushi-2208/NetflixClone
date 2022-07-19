@@ -9,17 +9,7 @@ export default function List({ title, movies }) {
     const [isMoved, setIsMoved] = useState(false);
     const [slideNumber, setSlideNumber] = useState(0);
     const listRef = useRef();
-    // const [movies, setMovies] = useState([]);
-
-    // useEffect(() => {
-    //     async function fetchData() {
-    //         const request = await axios.get(fetchUrl);
-    //         setMovies(request.data.results);
-    //     } fetchData();
-
-    // }, [fetchUrl])
-    
-
+  
     const handleClick = (direction) => {
         setIsMoved(true)
         let distance = listRef.current.getBoundingClientRect().x - 50

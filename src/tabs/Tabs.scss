@@ -2,10 +2,10 @@
 .tabs{
     background: #141414;
     padding-top: 1rem;
-    border-bottom: 3px solid #3d3d3d;
+    border-bottom: 0.1875rem solid #3d3d3d;
     border-right: none;
-    overflow: hidden;
-    object-fit: cover;
+    background-size: cover;
+    width: 100%;
     
 
   
@@ -35,7 +35,7 @@
     
 }
 .tab-border {
-    border-bottom: #e50914 4px solid;
+    border-bottom: #e50914 0.25rem solid;
   }
   .tab-content {
     padding: 5rem 20rem;
@@ -84,9 +84,9 @@
 
             }
             img{
-                height: 370px;
+                height: 23.125rem;
                 width: fit-content;
-                margin-top: -60px;
+                margin-top: -3.75rem;
                 margin-left: 4rem;
             }
           }

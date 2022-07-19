@@ -16,8 +16,6 @@ const Home = () => {
       const request = await axios.get(requests.fetchNetflixOriginals);
       setMovies(request.data.results);
     } fetchData();
-    filter(18);
-
   }, [])
 
   const filter = (filter) => {
