@@ -73,3 +73,22 @@
     }
 
 }
+@media screen and (max-width: 800px){
+    .register{
+        max-width: 800px;
+        max-height: 1000px;
+        background-size: cover;
+         .container{
+        .h1{
+            font-size: 1.3rem;
+        }
+        .h2{
+            font-size: 0.8rem;
+        }
+        .p{
+            font-size: 0.6rem;
+        }
+    }
+    }
+   
+}

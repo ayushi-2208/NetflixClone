@@ -2,10 +2,44 @@ import { useRef } from "react";
 import { useState } from "react";
 import "./signup.scss";
 import { useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword,updateProfile } from 'firebase/auth';
+import { auth } from '../../firebase';
 
 export default function Register() {
+  const againnavigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const[values, setValues] = useState({
+    email: "",
+    pass:"",
+  });
+  const[errorMsg, setErrorMsg] = useState("");
+  const[submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
+    const handleSubmission=()=>{
+        console.log(values)
+        if(!values.email || !values.pass){
+            setErrorMsg("Fill all fields");
+            return;
+        }
+        setErrorMsg("")
+        setSubmitButtonDisabled(true);
+        
+        createUserWithEmailAndPassword(auth,values.email,values.pass).then(async(res)=>{
+            setSubmitButtonDisabled(false)
+            const user = res.user;
+            console.log(user)
+            await updateProfile(user,{
+                displayName: values.name
+            });
+            againnavigate('/home')
+        })
+        .catch((err)=>{
+             setSubmitButtonDisabled(false);
+             setErrorMsg(err.message)
+             
+        });
+    }
 
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -38,21 +72,22 @@ export default function Register() {
         </p>
         {!email ? (
           <div className="input">
-            <input type="email" placeholder="email address" ref={emailRef} />
+            <input type="email" placeholder="email address" ref={emailRef} onChange={(event)=> setValues((prev)=>({...prev, email:event.target.value}))} />
             <button className="registerButton" onClick={handleStart}>
               Get Started
             </button>
           </div>
         ) : (
           <form className="input">
-            <input type="password" placeholder="password" ref={passwordRef} />
-            <button className="registerButton" onClick={handleFinish}>
+            <input type="password" placeholder="password" ref={passwordRef} onChange={(event)=> setValues((prev)=>({...prev, pass:event.target.value}))} />
+            <button className="registerButton"  onClick={handleSubmission} disabled={submitButtonDisabled}>
               
               Start
             
             </button>
           </form>
         )}
+        <b style={{color:"red"}}>{errorMsg}</b>
       </div>
     </div>
   );

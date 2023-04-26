@@ -21,8 +21,8 @@ export default function Register() {
         <div className="container">
             <h1>Unlimited movies, TV shows, and more</h1>
             <h2>Watch anywhere. Cancel anytime</h2>
-           <Link to = "/home" >
-           <button className="clicked">Watch Free For 30 Days </button>
+           <Link to = "/signup" >
+           <button className="clicked">Register </button>
            </Link>
            
             
