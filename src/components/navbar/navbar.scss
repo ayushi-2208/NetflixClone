@@ -1,73 +1,70 @@
-.navbar{
-    width: 100%;
-    color: white;
-    font-size: 0.875rem;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+.navbar {
+  width: 100%;
+  color: white;
+  font-size: 0.875rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
 
-    &.scrolled{
-        background-color: var(--main-color);
+  &.scrolled {
+    background-color: var(--main-color);
+  }
 
+  .container {
+    padding: 0 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.375rem;
+
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        height: 1.5625rem;
+        margin-right: 2.5rem;
+      }
+      span {
+        margin-right: 1.25rem;
+        cursor: pointer;
+      }
     }
+    .right {
+      display: flex;
+      align-items: center;
 
-    .container{
-        padding: 0 3.125rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 4.375rem;
+      .icon {
+        margin: 0px 0.9375rem;
+        cursor: pointer;
+      }
+      img {
+        width: 1.875rem;
+        height: 1.875rem;
+        border-radius: 0.3125rem;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .profile {
+        .options {
+          display: none;
+          background-color: var(--main-color);
+          border-radius: 0.3125rem;
+        }
 
-        .left{
+        span {
+          padding: 0.625rem;
+          cursor: pointer;
+        }
+
+        &:hover {
+          .options {
             display: flex;
-            align-items: center;
-        img{
-            height: 1.5625rem;
-            margin-right: 2.5rem;
+            flex-direction: column;
+            position: absolute;
+          }
         }
-        span{
-            margin-right: 1.25rem;
-            cursor: pointer;
-        }
-
-        }
-        .right{
-            display: flex;
-            align-items: center;
-
-            .icon{
-                margin: 0px 0.9375rem;
-                cursor: pointer;
-            }
-            img{
-                width: 1.875rem;
-                height: 1.875rem;
-                border-radius: 0.3125rem;
-                object-fit: cover;
-                cursor: pointer;
-            }
-            .profile{
-                .options{
-                    display: none;
-                    background-color: var(--main-color);
-                    border-radius: 0.3125rem;
-                }
-
-                span{
-                    padding: 0.625rem;
-                    cursor: pointer;
-                }
-
-                &:hover{
-                    .options{
-                        display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                    }
-                }
-            }
-        }
-        
+      }
     }
+  }
 }

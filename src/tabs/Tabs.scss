@@ -1,161 +1,148 @@
+.tabs {
+  background: #141414;
+  padding-top: 1rem;
+  border-bottom: 0.1875rem solid #3d3d3d;
+  border-right: none;
+  background-size: cover;
+  width: 100%;
 
-.tabs{
-    background: #141414;
-    padding-top: 1rem;
-    border-bottom: 0.1875rem solid #3d3d3d;
-    border-right: none;
-    background-size: cover;
-    width: 100%;
-    
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: grey;
 
-  
-    .container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: grey;
- 
-        p{
-        font-size: 1.2rem;
-        padding-top: 0.5rem;
+    p {
+      font-size: 1.2rem;
+      padding-top: 0.5rem;
     }
-        div{
-            padding: 1.5rem 0;
-        }
-     & div:hover{
-        color: #fff;
-        cursor: pointer;
+    div {
+      padding: 1.5rem 0;
     }
-
+    & div:hover {
+      color: #fff;
+      cursor: pointer;
     }
-
-    
+  }
 }
 .tab-border {
-    border-bottom: #e50914 0.25rem solid;
-  }
-  .tab-content {
-    padding: 5rem 20rem;
-    background: #000;
-    color: #fff;
-    overflow: hidden;
-    object-fit: cover;
+  border-bottom: #e50914 0.25rem solid;
+}
+.tab-content {
+  padding: 5rem 20rem;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  object-fit: cover;
 
-    .container {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    align-content: space-between;
+
+    #tab-1-content {
+      display: none;
+      opacity: 0;
+    }
+
+    .show {
+      display: block !important;
+      opacity: 1 !important;
+      transition: all 1000 ease-in;
+    }
+    #tab-1-content {
+      .tab-1-content-inner {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
-       align-content: space-between;
+        align-content: space-between;
 
-        #tab-1-content{
-            display: none;
-            opacity: 0;
+        .text {
+          .text-lg {
+            margin-top: 3.4rem;
+            margin-bottom: 1rem;
+            text-align: start;
+          }
+          .button {
+            color: white;
+            background-color: red;
+            height: 3rem;
+            width: 13rem;
+            font-size: 1rem;
+            cursor: pointer;
+          }
         }
-
-        .show {
-            display: block !important;
-            opacity: 1 !important;
-            transition: all 1000 ease-in;
-          }
-          #tab-1-content{
-             .tab-1-content-inner {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1rem;
-            align-content: space-between;
-            
-            .text{
-            .text-lg {
-                margin-top: 3.4rem;
-                margin-bottom: 1rem;
-                text-align: start;
-              }
-              .button{
-                color: white;
-                background-color: red;
-                height: 3rem;
-                width: 13rem;
-                font-size: 1rem;
-                cursor: pointer;
-              }
-
-            }
-            img{
-                height: 23.125rem;
-                width: fit-content;
-                margin-top: -3.75rem;
-                margin-left: 4rem;
-            }
-          }
+        img {
+          height: 23.125rem;
+          width: fit-content;
+          margin-top: -3.75rem;
+          margin-left: 4rem;
         }
       }
+    }
   }
-  .text-lg {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-   
-  } 
-  .button{
-    color: white;
-    background-color: red;
-    height: 3rem;
-    width: 13rem;
-    font-size: 1rem;
-    cursor: pointer;
-    }
-    .led{
-        width: 58rem;
-        height: 35rem;
-        margin-top: 1rem;
-    }
-    .text-md {
-        margin-bottom: 1.5rem;
-        font-size: 1.8rem;
+}
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.button {
+  color: white;
+  background-color: red;
+  height: 3rem;
+  width: 13rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.led {
+  width: 58rem;
+  height: 35rem;
+  margin-top: 1rem;
+}
+.text-md {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+.text-dark {
+  font-size: 1rem;
+  color: #999;
+}
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    tr {
+      &:nth-child(odd) {
+        background: #222;
       }
-      .text-dark {
-        font-size: 1rem;
+      td {
         color: #999;
-      }
-      .table {
-        width: 100%;
-        margin-top: 2rem;
-        border-collapse: collapse;
-        border-spacing: 0;
+        padding: 0.8rem 1.2rem;
+        text-align: center;
 
-        tbody {
-            display: table-row-group;
-            vertical-align: middle;
-            border-color: inherit;
-            tr {
-
-                &:nth-child(odd) {
-                    background: #222;
-                  }
-                td {
-                color: #999;
-                padding: 0.8rem 1.2rem;
-                text-align: center;
-
-                &:first-child{
-                    text-align: left;
-                  }
-              }
-            }
-          }
-
-        thead{
-            th{
-                
-         th {
-           
-            
-            text-transform: uppercase;
-            padding: 0.8rem;
-          }
-        }
+        &:first-child {
+          text-align: left;
         }
       }
-      
+    }
+  }
+
+  thead {
+    th {
+      th {
+        text-transform: uppercase;
+        padding: 0.8rem;
+      }
+    }
+  }
+}
