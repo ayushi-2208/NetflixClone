@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [searchfilter, setSearchFilter] = useState(false);
 
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
@@ -27,21 +28,36 @@ const Navbar = (props) => {
           <h2
             style={{
               fontSize: "20px",
-              color: "red",
-              border: "1px solid red",
+              color: "white",
+              border: "3px solid red",
               borderRadius: "8px",
               padding: "5px 10px",
               whiteSpace: "nowrap",
+              background: "red",
             }}
           >
             {props.username ? `${props.username}` : ""}
           </h2>
-          <Search className="icon" />
+          <Search className="icon" onClick={() => setSearchFilter(!searchfilter)} />
+          {searchfilter ? (
+            <input
+              type="text"
+              placeholder="Search"
+              style={{
+                padding: "7px 12px",
+                borderRadius: "6px",
+                border: "3px solid red",
+                width: "450px",
+              }}
+            ></input>
+          ) : (
+            <></>
+          )}
 
           <Notifications className="icon" />
           <button
             style={{
-              width: "80%",
+              width: "100px",
               padding: "5px 10px",
               background: "red",
               color: "white",

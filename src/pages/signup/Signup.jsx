@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useState } from "react";
 import "./signup.scss";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../../firebase";
 
@@ -71,7 +71,8 @@ export default function Register() {
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
             alt=""
           />
-          <button className="loginButton">Sign In</button>
+          
+          <button className="loginButton"><Link to="/login" style={{textDecoration:"none",color:"white"}}>Sign In</Link></button>
         </div>
       </div>
       <div className="container">
