@@ -36,20 +36,20 @@
 You can go through the project by Navigating to `/src/components/` and `/src/pages`. <br/>
 <ul>
 <li>
-There you can see 5 folders in components:-
-- featured
-- footer
-- list
-- listitem (show movies according to the genere)
-- navbar
+There you can see 5 folders in components:-<br/>
+- featured<br/>
+- footer<br/>
+- list<br/>
+- listitem (show movies according to the genere)<br/>
+- navbar<br/>
 </li></ul>
 <ul>
 <li>
-In pages we have 
-- home (Main page to show the movies list using the api)
-- login
-- signup
-- register
+In pages we have <br/>
+- home (Main page to show the movies list using the api)<br/>
+- login<br/>
+- signup<br/>
+- register<br/>
 and also one tab folder which is used for the tab change in landing page
 they all have their own js and scss file.
 </li></ul>
