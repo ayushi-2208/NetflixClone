@@ -30,7 +30,7 @@
 </ul>
 
 <h2>Screenshots</h2>
-<div align ="center" style="display:flex;"><img src="https://raw.githubusercontent.com/ayushi-2208/fampay/master/Screenshots/WhatsApp%20Image%202022-07-18%20at%205.53.18%20PM.jpeg" alt="" align="left"  style="height: 520px; width: 280px; margin-right: 20px;"><img src="https://raw.githubusercontent.com/ayushi-2208/fampay/master/Screenshots/WhatsApp%20Image%202022-07-18%20at%205.53.07%20PM.jpeg" alt="" style="height: 520px; width: 280px; margin-right: 80px;"><img src="https://raw.githubusercontent.com/ayushi-2208/fampay/master/Screenshots/WhatsApp%20Image%202022-07-18%20at%206.02.01%20PM%20(1).jpeg" alt="" align="right"  style="height: 520px; width: 280px;"> </div>
+<div align ="center" style="display:block;"><img src="https://raw.githubusercontent.com/ayushi-2208/fampay/master/Screenshots/WhatsApp%20Image%202022-07-18%20at%205.53.18%20PM.jpeg" alt="" align="center"  style="height: 520px; width: 280px; margin-right: 20px;"><img src="https://raw.githubusercontent.com/ayushi-2208/fampay/master/Screenshots/WhatsApp%20Image%202022-07-18%20at%205.53.07%20PM.jpeg" alt="" style="height: 520px; width: 280px; margin-right: 80px;"><img src="https://raw.githubusercontent.com/ayushi-2208/fampay/master/Screenshots/WhatsApp%20Image%202022-07-18%20at%206.02.01%20PM%20(1).jpeg" alt="" align="center"  style="height: 520px; width: 280px;"> </div>
 <h2>Usage Instructions</h2>
 
 You can go through the project by Navigating to `/src/components/` and `/src/pages`. <br/>
