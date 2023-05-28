@@ -5,6 +5,7 @@ import Search from "@material-ui/icons/Search";
 import Notifications from "@material-ui/icons/Notifications";
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
 import { Link } from "react-router-dom";
+import SearchBar from "../Search/Searchbar";
 
 const Navbar = (props) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,16 +41,7 @@ const Navbar = (props) => {
           </h2>
           <Search className="icon" onClick={() => setSearchFilter(!searchfilter)} />
           {searchfilter ? (
-            <input
-              type="text"
-              placeholder="Search"
-              style={{
-                padding: "7px 12px",
-                borderRadius: "6px",
-                border: "3px solid red",
-                width: "450px",
-              }}
-            ></input>
+            <SearchBar/>
           ) : (
             <></>
           )}
