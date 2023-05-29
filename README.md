@@ -30,7 +30,20 @@
 </ul>
 
 <h2>Screenshots of Web Application</h2>
-<div align ="center" style="display:block;"><img src="Screenshot/Screenshot (128).png" alt="" align="center"  style="height: 420px; width: 420px; "><img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(129).png" alt="" style="height: 420px; width: 420px; margin-bottom: 30px "><img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(130).png" alt="" align="center"  style="height: 420px; width: 420px; margin-bottom: 30px "> <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(131).png" alt="" align="center"  style="height: 420px; width: 420px; margin-bottom: 30px "> <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(132).png" alt="" align="center"  style="height: 420px; width: 420px; margin-bottom: 30px ">  <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(134).png" alt="" align="center"  style="height: 420px; width: 420px; margin-bottom: 30px ">  </div>
+<img src="https://github.com/ayushi-2208/NetflixClone/assets/69577773/3021e915-b40c-4100-a53b-88ee87ebe9eb" alt="" align="center"  style="height: 380px; width: 720px; "><br/>
+<br/>
+<img src="https://github.com/ayushi-2208/NetflixClone/assets/69577773/accc6d0e-6749-4c92-a94f-31c7011379f3" alt="" style="height: 380px; width: 720px; margin-bottom: 30px "><br/>
+<br/>
+<img src="https://github.com/ayushi-2208/NetflixClone/assets/69577773/6edd2448-5d37-48c6-aa46-6540550c54a7" alt="" align="center"  style="height: 380px; width: 720px; margin-bottom: 30px "> <br/>
+<br/>
+<img src="https://github.com/ayushi-2208/NetflixClone/assets/69577773/60003df2-7af9-4751-9b4e-8e4275a2e9b2" alt="" align="center"  style="height: 380px; width: 720px; margin-bottom: 30px "><br/>
+<br/>
+<img src="https://github.com/ayushi-2208/NetflixClone/assets/69577773/e8d30d6e-6fc8-49b4-8dfd-366d456304d7" alt="" align="center"  style="height: 380px; width: 720px; margin-bottom: 30px "> <br/>
+<br/>
+<img src="https://github.com/ayushi-2208/NetflixClone/assets/69577773/d90a8ba4-4ac5-4f92-afe1-6b92a797b5f4" alt="" align="center"  style="height: 380px; width: 720px;margin-bottom: 30px "><br/>
+
+
+
 <h2>Usage Instructions</h2>
 
 You can go through the project by Navigating to `/src/components/` and `/src/pages`. <br/>
