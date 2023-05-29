@@ -29,7 +29,7 @@
 <li>Firebase</li>
 </ul>
 
-<h2>Screenshots</h2>
+<h2>Screenshots of Web Application</h2>
 <div align ="center" style="display:block;"><img src="Screenshot/Screenshot (128).png" alt="" align="center"  style="height: 420px; width: 420px; "><img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(129).png" alt="" style="height: 420px; width: 420px; "><img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(130).png" alt="" align="center"  style="height: 420px; width: 420px; "> <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(131).png" alt="" align="center"  style="height: 420px; width: 420px; "> <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(132).png" alt="" align="center"  style="height: 420px; width: 420px; ">  <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(134).png" alt="" align="center"  style="height: 420px; width: 420px; ">  </div>
 <h2>Usage Instructions</h2>
 
